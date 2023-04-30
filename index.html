@@ -25,5 +25,53 @@
 			</div>
 		</div>
 </div>
+<!----------------about-------------->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="images/Ron1.png">
+			</div>
+			<div class="about-col-2">
+				<h1 class = "sub-title"> About Me </h1>
+				<p> Pikmin 4!!!</p>
+
+				<div class = "tab-titles">
+					<p class = "tab-links active-link" onclick="opentab('skills')"> Skills</p>
+					<p class = "tab-links" onclick="opentab('education_experience')">Education & Experience</p>
+				</div>
+				<div class="tab-contents active-tab" id = "skills" >
+					<ul>
+						<li><span>Languages </span> <br>Java, JavaScript, TypeScript, Python, C++, C#, HTML/CSS, SQL</li>
+						<li><span>Technologies </span> <br>Windows, Linux, Mac, SQL, SQLite, NodeJS, ReactJS, REST APIs, Embedded</li>
+						<li><span>Tools </span> <br>Visual Studio, InteliJ, Webstorm, Figma, Unity, Unreal Engine, Photoshop, Premiere Pro, After Effects </li>
+					</ul>
+				</div>
+				<div class="tab-contents" id = "education_experience">
+					<ul>
+						<li><span>Aug. 2019 - Present</span><br>Pursuing Bachelor's of Science and Minor of Mathematics at Florida Gulf Coast Univeristy</li>
+						<li><span>Dec. 2022 - Present</span><br>Software Engineer Intern at Arthrex</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+</script>
+
 </body>
 </html>
