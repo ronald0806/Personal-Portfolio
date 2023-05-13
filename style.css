@@ -13,7 +13,7 @@
 
 body{
 	background: #080800;
-	background-image: url(Images/pikmin_background.png);
+	background-image: url(images/pikmin_background.png);
 	color: #fff;
 }
 
@@ -215,7 +215,12 @@ nav ul li a:hover::after{
 
 #project2{
 	color: #ababab;
-	margin-top: 300px;
+	margin-top: 350px;
+}
+
+#project3{
+	color: #ababab;
+	margin-top: 350px;
 }
 
 .row{
@@ -249,6 +254,21 @@ nav ul li a:hover::after{
 	margin-left: auto;
 }
 .project2-col-2{
+	flex-basis: 60%;
+	margin-top: -500px
+}
+
+.project3-col-1{
+	flex-basis: 35%;
+	margin-top: -460px;
+}
+.project3-col-1 img{
+	width: 90%;
+	border-radius: 10px;
+	border: 5px solid #ff004f;
+	margin-right:  200px;
+}
+.project3-col-2{
 	flex-basis: 60%;
 	margin-top: -500px
 }
